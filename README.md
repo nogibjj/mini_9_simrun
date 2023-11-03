@@ -11,8 +11,13 @@ You can access the data from the following URL: [Diabetes Database](https://www.
 
 ## Code Overview
 
-### 1. Shared Common Code Script: lib.py
-In this script I am using many different functions to create a holistic understanding of my statistical analysis along with visualizing the data in three different plots and tables. 
+### What are gists?
+Gists provide a simple way to share code snippets with others. Every gist is a Git repository, which means that it can be forked and cloned. If you are signed in to GitHub when you create a gist, the gist will be associated with your account and you will see it in your list of gists when you navigate to your gist home page.
+
+Gists can be public or secret. Public gists show up in Discover, where people can browse new gists as they're created. They're also searchable, so you can use them if you'd like other people to find and see your work.
+
+#### What is comprised in the Jupyter Notebook?
+I am using many different functions to create a holistic understanding of my statistical analysis along with visualizing the data in three different plots and tables. 
   1. get_median()
   2. get_mean()
   3. get_std_dev()
@@ -21,17 +26,31 @@ In this script I am using many different functions to create a holistic understa
   6. visualize_dataset()
   7. display_statistics()
 
-### 2. Jupyter Notebook and Python Script.py
-The Jupyter notebook provides a visual representation of the code represented in our lib.py. The python script.py descriptive stats uses pandas and lib functions. I used nbval for pytest to ensure valdity of code. 
+### MakeFile and Workflows
+I created four different workflows to show each step of my Makefile.
 
-### 3. MakeFile and Workflows
-I created four different workflows to show each step of my Makefile. Install: runs the packages indicated in my requirements.txt
-Lint: Lints the code with Ruff to ensure correct python convention is held
-Format: Formats code with Python black formatter
-Test: Runs tests on notebook, script, and library
+Install: runs the packages indicated in my requirements.txt
 
-### 4. Test_script.py and Test_lib.py
-Both these files containes tests for their respective python scripts. This ensures the code in functionally performs well.
+Lint: 
+```sh
+nbqa ruff src/*.ipynb
+```
+![Alt text](image-1.png)
+
+Format: 
+```sh
+nbqa black src/*.ipynb
+```  
+![Alt text](image.png)
+
+Test: 
+```sh
+python -m pytest --nbval src/*.ipynb
+```
+
+![Alt text](image-2.png)
+
+
 
 ### 5. Understanding the statistics functions
 The objective is to analyze the relationship between Insulin, Glucose, BMI, and diabetes status (1 for diabetic, 0 for not diabetic). The functions defined calculate maximum, minimum, mean, median, and standard deviation for these key variables, aiding in a descriptive analysis of their association with diabetes.

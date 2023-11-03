@@ -6,6 +6,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
 def maximum(data, column):
     """
     Input:
@@ -100,13 +101,11 @@ def visualize_dataset(data, jupyter: bool = False):
     plt.ylabel("data types of diabetes predictors")
     plt.title("Count Plot of Diabetes Predictors Data Types")
     plt.show()
-    
 
     if not jupyter:
         count_visualization_path = "output/Count.png"
         plt.savefig(count_visualization_path)
-        #saving to repo
-
+        # saving to repo
 
     # Data for the first plot
     categories1 = removed_NaN_data["Glucose"]
@@ -147,7 +146,6 @@ def visualize_dataset(data, jupyter: bool = False):
     # Display the plots
     plt.show()
     bar_visualization_path = "output/Barplots.png"
-    
 
     if not jupyter:
         plt.savefig(bar_visualization_path)
@@ -216,7 +214,6 @@ def display_statistics(data, jupyter=True):
     #     full_report_path = r"output/full_report.md"
     #     with open(full_report_path, "w", encoding="utf-8") as report:
     #         report.write("\n![Visualization](Table_Stats.png)\n")
-
 
 
 if __name__ == "__main__":
