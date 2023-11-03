@@ -1,5 +1,8 @@
 # Data Analysis: Glucose, Insulin, and BMI as predictor variables on the outcome variable (whether a patient is Diabetic or not)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/simrunsharma/03caae81f132f704a593bfe49d9afd53/stats.ipynb#scrollTo=Sx3tllCZ0Ou_)
+
+
 [![Install](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/install.yml)[![Lint](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/lint.yml)[![Format](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/format.yml)[![Test](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Simrun_Continuous_Integration_using_GitHub_Actions_of_Python_Data_Science_Project/actions/workflows/test.yml)
 
 ## Data Source
